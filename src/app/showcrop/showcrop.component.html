@@ -1,0 +1,17 @@
+<table class="table table-sm">
+    <thead>
+        <th>Crop Name</th><th>Price in Rs</th><th>Farmer Name</th>
+        <th>Location</th> <th>Buy</th> <th>Call</th>
+    </thead>
+    <tr *ngFor="let p of products">
+        <td>{{p.cropname}}</td>
+        <td>{{p.price}}</td>
+        <td>{{p.farmername}}</td>
+        <td>{{p.location}}</td>
+        <td><button class="btn btn-warning">Buy
+        </button></td>
+        <td><button class="btn btn-warning">Call
+        </button></td>
+        <td>
+    </tr>
+</table>

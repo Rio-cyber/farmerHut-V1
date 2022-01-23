@@ -1,0 +1,26 @@
+<div class="image">
+    <h2>FarmerHut</h2>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div class="ye">
+        
+
+<form #clForm="ngForm" (ngSubmit)="savecl(clForm)">
+    <h1>Login as Farmer</h1>
+ 
+            <input type="email" name="farmeremail" placeholder="email" ngModel required >
+         
+            <input type="password" name="password" placeholder="password" ngModel min="9">
+         
+               <input type="submit" value="Login" [disabled]="!clForm.valid" class="reg-btn b">
+               <a [routerLink]="['/newcrop']" routerLinkActive="active">Login </a>
+               <a [routerLink]="['/register']" routerLinkActive="active">Register</a>
+</form>
+</div>
+<br>
+<br>
+<br>
+</div> 

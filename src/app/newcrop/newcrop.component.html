@@ -1,0 +1,23 @@
+<div class="image">
+    <h2>FarmerHut</h2>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div class="ye">
+<h2>FarmerHut</h2>
+<form #clForm="ngForm" (ngSubmit)="savecl(clForm)">
+    
+        
+        <input type="text" name="farmername" placeholder="Farmer Name" ngModel required >
+            <input type="text" name="cropname" placeholder="Crop name" ngModel required >
+            <input type="text" name="price" placeholder="Price" ngModel required >
+            <input type="text" name="location" placeholder="Location" ngModel required >
+            <input type="submit" value="Save" [disabled]="!clForm.valid">
+</form>
+</div>
+<br>
+<br>
+<br>
+</div> 

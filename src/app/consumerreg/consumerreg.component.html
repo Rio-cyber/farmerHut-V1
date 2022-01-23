@@ -1,0 +1,33 @@
+<div class="image">
+<h2>FarmerHut</h2>
+<br>
+<br>
+<br>
+<br>
+<br>
+<div class="ye">
+<form #clForm="ngForm" (ngSubmit)="savecl(clForm)">
+<h1>Register</h1>
+
+<input type="email" placeholder="Email" name="customerName" ngModel class="a" ngModel required >
+       
+<input type="password" placeholder="Password" name="password" class="a" ngModel required>
+    
+<input type="password" placeholder="Confirm Password" name="confirmpassword" class="a" ngModel required>
+      
+<input type="submit" value="Register" [disabled]="!clForm.valid" class="reg-btn b">
+
+<p class="login-link">Already have an account? <span><a [routerLink]="['/consumerlog']" routerLinkActive="active"> Login Here </a></span> </p>
+
+<div class="register-google">
+<p>Register with</p>
+<p class="sign-google"><a href="">Sign in with Google</a></p>
+</div>
+
+</form>
+</div>
+<br>
+<br>
+<br>
+</div>  
+ 
